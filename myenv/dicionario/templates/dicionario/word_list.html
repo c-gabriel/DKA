@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<head>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<title>DKA Web</title>
+</head>
+	<body>
+	<div>
+	    <h1>Diksyonè Kreyòl Ayisyen</h1>
+	</div>
+
+	{% for word in words %}
+	    <div>
+		<p>Português: {{ word.word_pt }}</p>
+		<p>Inglês: {{ word.word_en }}</p>
+		<p>Crioulo: {{ word.word_cr }}</p>
+		<p>Descrição: {{ word.descr|linebreaksbr }}</p>
+	    </div>
+	{% endfor %}
+</body>
