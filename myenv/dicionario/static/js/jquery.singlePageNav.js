@@ -35,7 +35,7 @@ if (typeof Object.create !== 'function') {
             this.$window = $(window);
             this.$htmlbody = $('html, body');
             
-            this.$links.on('click.singlePageNav', $.proxy(this.handleClick, this));
+            //this.$links.on('click.singlePageNav', $.proxy(this.handleClick, this));
 
             this.didScroll = false;
             this.checkPosition();

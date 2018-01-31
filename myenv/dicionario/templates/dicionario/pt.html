@@ -1,0 +1,117 @@
+{% extends 'dicionario/layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+	<ul class="language">
+		<p><strong>Escolha a linguagem da palavra que deseja procurar</strong>
+		<div class="wrap">
+			<nav>
+				<ul class="primary">
+					<li>
+						<a href="{% url 'pt' %}">Portguês</a>
+					</li>
+					<li>
+						<a href="{% url 'en' %}">English</a>
+					</li>
+					<li>
+						<a href="{% url 'cr' %}">Kreyòl</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</ul>
+	
+	<ul class="lista">
+		<div class="wrap">
+			<nav>
+				<ul class="letras">
+					<li>
+						<a href="{% url 'word_list_pt' q='A' %}">A</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='B' %}">B</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='C' %}">C</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='D' %}">D</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='E' %}">E</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='F' %}">F</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='G' %}">G</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='H' %}">H</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='I' %}">I</a>
+					</li>
+				</u>
+				<ul class="letras">
+					<li>
+						<a href="{% url 'word_list_pt' q='J' %}">J</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='K' %}">K</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='L' %}">L</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='M' %}">M</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='N' %}">N</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='O' %}">O</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='P' %}">P</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='Q' %}">Q</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='R' %}">R</a>
+					</li>
+				</u>
+				<ul class="letras">
+					<li>
+						<a></a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='S' %}">S</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='T' %}">T</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='U' %}">U</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='V' %}">V</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='W' %}">W</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='X' %}">X</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='Y' %}">Y</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_pt' q='Z' %}">Z</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</ul>
+{% endblock %}

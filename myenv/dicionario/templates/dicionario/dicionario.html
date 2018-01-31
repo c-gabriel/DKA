@@ -2,10 +2,21 @@
 
 {% block content %}
 	<ul class="language">
-		<p>Escolha a lingua da palavra que deseja procurar
-		<li>Português</li>
-		<li>English</li>
-		<li>Kreyòl</li>
+		<p><strong>Escolha a linguagem da palavra que deseja procurar</strong>
+		<div class="wrap">
+			<nav>
+				<ul class="primary">
+					<li>
+						<a href="{% url 'pt' %}">Portguês</a>
+					</li>
+					<li>
+						<a href="{% url 'en' %}">English</a>
+					</li>
+					<li>
+						<a href="{% url 'cr' %}">Kreyòl</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</ul>
-
 {% endblock %}

@@ -25,12 +25,14 @@ SECRET_KEY = '#bdbb*=9np&uh4k!%lgce-^l%tmhx+jzi%z^zwe+q21mm*u5fd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '<your_username>.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'carlosgabriel.pythonanywhere.com']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+	'dal',
+	'dal_select2',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dicionario',
-    'sequences.apps.SequencesConfig',
 ]
 
 MIDDLEWARE = [

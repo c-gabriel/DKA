@@ -2,5 +2,16 @@
 
 {% block content %}
 
+	<ul class="language">
+		<div class="busca">
+			{% if error %}
+				<p style="color: red;">Please submit a search term.</p>
+			{% endif %}
+			<form action="/search" class="search" method="get">
+				<input class="searchbar" id="s" name="q" type="text" value="" />
+				<input class="searchbut" type="submit" value="Buscar" />
+			</form>
+		</div>
+	</ul>
 {% endblock %}
 	

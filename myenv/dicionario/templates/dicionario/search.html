@@ -1,0 +1,38 @@
+{% extends 'dicionario/layout.html' %}
+
+{% block content %}
+
+	<ul class="language">
+		<div class="busca">
+			{% if error %}
+				<p style="color: red;">Please submit a search term.</p>
+			{% endif %}
+			<form action="/search" class="search" method="get">
+				<input class="searchbar" id="s" name="q" type="text" value="" />
+				<input class="searchbut" type="submit" value="Buscar" />
+			</form>
+		</div>
+	</ul>
+	
+	<div class="entry-content">
+		<table>
+			<tr>
+				<th>CRIOULO</th>
+				<th>INGLÊS</th>
+				<th>PORTUGUÊS</th>
+				<th>DESCRIÇÃO</th>
+			</tr>
+			{% for word in words %}
+				<tr>
+					<td>{{ word.word_pt }}</td>
+					<td>{{ word.word_en }}</td>
+					<td>{{ word.word_cr }}</td>
+					<td>{{ word.descr }}</td>
+				</tr>
+			{% empty %}
+				<li>Não há palavras cadastradas começando com a letra {{ letra }}.</li>
+			{% endfor %}
+		</table>
+	</div>
+{% endblock %}
+	

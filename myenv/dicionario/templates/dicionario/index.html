@@ -1,7 +1,38 @@
 {% extends 'dicionario/layout.html' %}
+{% load staticfiles %}
 
 {% block content %}
-
+	<div class="main-slider">
+		<div class="flexslider">
+			<ul class="slides">
+	           
+				<li>
+					<div class="slider-caption">
+						<h2>Diksyonè Kreyòl Ayisyen</h2>
+						<p>Diksyonè Kreyòl / Pòtigè / Angle</p>
+					</div>
+					<img src="{% static 'images/slide1.png' %}" alt="Slide 1">
+				</li>
+	              
+				<li>
+					<div class="slider-caption">
+						<h2>Diksyonè Kreyòl Ayisyen</h2>
+						<p>Dicionário Crioulo / Português / Inglês</p>
+					</div>
+					<img src="{% static 'images/slide1.png' %}" alt="Slide 2">
+				</li>
+	              
+	              			<li>
+					<div class="slider-caption">
+						<h2>Diksyonè Kreyòl Ayisyen</h2>
+						<p>Dictionary Creole / Portuguese / English<p>
+					</div>
+					<img src="{% static 'images/slide1.png' %}" alt="Slide 3">
+				</li>
+	              
+			</ul>
+		</div>
+	</div>
 	<div class="entry-content">
 		<p>Estamos felizes por poder disponibilizar esse dicionário a todos! O dicionário está em construção, a equipe do DKA Web conta com sua ajuda para perceber as palavras que estão faltando. Agora, permita-nos detalhar uns&nbsp;pontos sobre este <em>site</em>.</p>
 		<ul>
@@ -15,5 +46,6 @@
 		<p>&nbsp;</p>
 		<p>Equipe DKA Web.</p>
 	</div>	
+	
 {% endblock %}
 	

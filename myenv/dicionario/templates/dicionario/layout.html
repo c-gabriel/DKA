@@ -5,6 +5,8 @@
     <title>DKA Web</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
 <!-- 
 
 Sonic Template 
@@ -31,9 +33,9 @@ http://www.templatemo.com/tm-394-sonic
         <div class="navigation responsive-menu">
             <ul>
                 <li class="home"><a href="{% url 'index' %}">Home</a></li>
-	        <li class="services"><a href="{% url 'dicionario' %}">Diksyonè</a></li>
-	        <li class="portfolio"><a href="{% url 'busca' %}">Search</a></li>
-	        <li class="contact"><a href="{% url 'contato' %}">Contact</a></li>
+				<li class="services"><a href="{% url 'dicionario' %}">Diksyonè</a></li>
+				<li class="portfolio"><a href="{% url 'busca' %}">Search</a></li>
+				<li class="contact"><a href="{% url 'contato' %}">Contact</a></li>
                 <li class="about"><a href="{% url 'sobre' %}">About Us</a></li>
             </ul> <!-- /.main_menu -->
         </div> <!-- /.responsive_menu -->
@@ -41,91 +43,59 @@ http://www.templatemo.com/tm-394-sonic
 
 	<div id="main-sidebar" class="hidden-xs hidden-sm">
 		<div class="logo">
-			<a href="#"><h1>DKA</h1></a>
+			<a><h1>DKA</h1></a>
 			<span>Diksyonè Kreyòl Ayisyen</span>
 		</div> <!-- /.logo -->
 
 		<div class="navigation">
 	        <ul class="main-menu">
-               		<li class="home"><a href="{% url 'index' %}">Home</a></li>
+               	<li class="home"><a href="{% url 'index' %}">Home</a></li>
 	        	<li class="services"><a href="{% url 'dicionario' %}">Diksyonè</a></li>
 	        	<li class="portfolio"><a href="{% url 'busca' %}">Search</a></li>
 	        	<li class="contact"><a href="{% url 'contato' %}">Contact</a></li>
-                	<li class="about"><a href="{% url 'sobre' %}">About Us</a></li>
+                <li class="about"><a href="{% url 'sobre' %}">About Us</a></li>
 	        </ul>
+			<div class="site-footer">
+				<div class="first-footer">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="social-footer">
+									<ul>
+										<li><a href="#" class="fa fa-facebook"></a></li>
+										<li><a href="#" class="fa fa-twitter"></a></li>
+										<li><a href="#" class="fa fa-linkedin"></a></li>
+									</ul>
+								</div> <!-- /.social-footer -->
+							</div> <!-- /.col-md-12 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container-fluid -->
+				</div> <!-- /.first-footer --> 
+				<div class="bottom-footer">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-6">
+								<p class="copyright">Copyright © 2018</p>
+								<p>Desenvolvido por</p>
+								<p>Carlos Almeida e Luan Azevedo</p>
+							</div> <!-- /.col-md-6 -->
+							<div class="col-md-6 credits">
+								<p><!-- Design: <a rel="nofollow" href="http://www.templatemo.com/tm-394-sonic" target="_parent">Sonic</a> --></p>
+							</div> <!-- /.col-md-6 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container-fluid -->
+				</div> <!-- /.bottom-footer -->
+			</div> <!-- /.site-footer -->
 		</div> <!-- /.navigation -->
 
 	</div> <!-- /#main-sidebar -->
 	
 	<div id="main-content">
 		<div id="templatemo">
-			<div class="main-slider">
-				<div class="flexslider">
-					<ul class="slides">
-		           
-						<li>
-							<div class="slider-caption">
-								<h2>Diksyonè Kreyòl Ayisyen</h2>
-								<p>Diksyonè Kreyòl / Pòtigè / Angle</p>
-							</div>
-							<img src="{% static 'images/slide1.png' %}" alt="Slide 1">
-						</li>
-		               
-						<li>
-							<div class="slider-caption">
-								<h2>Diksyonè Kreyòl Ayisyen</h2>
-								<p>Dicionário Crioulo / Português / Inglês</p>
-							</div>
-							<img src="{% static 'images/slide1.png' %}" alt="Slide 2">
-						</li>
-		               
-		               			<li>
-							<div class="slider-caption">
-								<h2>Diksyonè Kreyòl Ayisyen</h2>
-								<p>Dictionary Creole / Portuguese / English<p>
-							</div>
-							<img src="{% static 'images/slide1.png' %}" alt="Slide 3">
-						</li>
-		               
-					</ul>
-				</div>
-			</div>
+			{% block content %}
 
-        {% block content %}
-
-        {% endblock %}
-
-	<div class="site-footer">
-		<div class="first-footer">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="social-footer">
-							<ul>
-								<li><a href="#" class="fa fa-facebook"></a></li>
-								<li><a href="#" class="fa fa-twitter"></a></li>
-								<li><a href="#" class="fa fa-dribbble"></a></li>
-								<li><a href="#" class="fa fa-linkedin"></a></li>
-								<li><a href="#" class="fa fa-rss"></a></li>
-							</ul>
-						</div> <!-- /.social-footer -->
-					</div> <!-- /.col-md-12 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container-fluid -->
-		</div> <!-- /.first-footer -->
-		<div class="bottom-footer">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-md-6">
-						<p class="copyright">Copyright © 2018 <a href="#">Desenvolvido por Carlos Almeida e Luan Azevedo</a></p>
-					</div> <!-- /.col-md-6 -->
-					<div class="col-md-6 credits">
-						<p><!-- Design: <a rel="nofollow" href="http://www.templatemo.com/tm-394-sonic" target="_parent">Sonic</a> --></p>
-					</div> <!-- /.col-md-6 -->
-				</div> <!-- /.row -->
-			</div> <!-- /.container-fluid -->
-		</div> <!-- /.bottom-footer -->
-	</div> <!-- /.site-footer -->
+			{% endblock %}
+		</div> <!-- /#templatemo -->
 	</div> <!-- /#main-content -->
 
 	<!-- JavaScripts -->
@@ -134,31 +104,7 @@ http://www.templatemo.com/tm-394-sonic
 	<script src= {% static 'js/jquery.flexslider.js' %}></script>
 	<script src= {% static 'js/jquery.prettyPhoto.js' %}></script>
 	<script src= {% static 'js/custom.js' %}></script>
-	<script>
-		$(document).ready(function(){
-			$("a[data-gal^='prettyPhoto']").prettyPhoto({hook: 'data-gal'});
-		});
 
-        function initialize() {
-          var mapOptions = {
-            zoom: 13,
-            center: new google.maps.LatLng(40.7809919,-73.9665273)
-          };
-
-          var map = new google.maps.Map(document.getElementById('map-canvas'),
-              mapOptions);
-        }
-
-        function loadScript() {
-          var script = document.createElement('script');
-          script.type = 'text/javascript';
-          script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-              'callback=initialize';
-          document.body.appendChild(script);
-        }
-
-        window.onload = loadScript;
-    </script>
 <!-- templatemo 394 sonic -->
 </body>
 </html>

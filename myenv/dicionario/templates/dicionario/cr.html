@@ -1,0 +1,136 @@
+{% extends 'dicionario/layout.html' %}
+
+{% block content %}
+	<ul class="language">
+		<p><strong>Escolha a linguagem da palavra que deseja procurar</strong>
+		<div class="wrap">
+			<nav>
+				<ul class="primary">
+					<li>
+						<a href="{% url 'pt' %}">Portguês</a>
+					</li>
+					<li>
+						<a href="{% url 'en' %}">English</a>
+					</li>
+					<li>
+						<a href="{% url 'cr' %}">Kreyòl</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</ul>
+	
+		<ul class="lista">
+		<div class="wrap">
+			<nav>
+				<ul class="letras">
+					<li>
+						<a href="{% url 'word_list_cr' q='A' %}">A</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='AN' %}">AN</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='B' %}">B</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='CH' %}">CH</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='D' %}">D</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='E' %}">E</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='È' %}">È</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='EN' %}">EN</a>
+					</li>
+				</ul>
+				<ul class="letras">
+					<li>
+						<a href="{% url 'word_list_cr' q='F' %}">F</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='G' %}">G</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='H' %}">H</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='I' %}">I</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='J' %}">J</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='K' %}">K</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='L' %}">L</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='M' %}">M</a>
+					</li>
+				</ul>
+				<ul class="letras">
+					<li>
+						<a href="{% url 'word_list_cr' q='N' %}">N</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='O' %}">O</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='Ò' %}">Ò</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='ON' %}">ON</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='OU' %}">OU</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='P' %}">P</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='R' %}">R</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='S' %}">S</a>
+					</li>
+				</ul>
+				<ul class="letras">
+					<li>
+						<a href="{% url 'word_list_cr' q='T' %}">T</a>
+					</li>
+					<li>
+						<a></a>
+					</li>
+					<li>
+						<a></a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='U' %}">U</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='UI' %}">UI</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='V' %}">V</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='W' %}">W</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='Y' %}">Y</a>
+					</li>
+					<li>
+						<a href="{% url 'word_list_cr' q='Z' %}">Z</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</ul>
+{% endblock %}
